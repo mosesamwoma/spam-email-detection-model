@@ -64,35 +64,12 @@ Email spam detection is a critical component of modern email systems. This proje
 
 ## 🔮 Future Improvements
 
-### Short-term Goals
 - [ ] **REST API Integration**: Build API for real-time spam detection
-- [ ] **Web Interface**: Dashboard for non-technical users
-- [ ] **Model Optimization**: Hyperparameter tuning for better performance
-- [ ] **Extended Testing**: Increase test coverage to 95%+
-- [ ] **Documentation**: Comprehensive API documentation
-
-### Medium-term Goals
-- [ ] **Multi-language Support**: Detect spam in multiple languages
-- [ ] **Deep Learning Models**: Implement LSTM and BERT for improved accuracy
-- [ ] **Advanced Models**: Compare performance with:
-  - Naive Bayes
-  - Support Vector Machines (SVM)
-  - Random Forest
-  - Gradient Boosting (XGBoost, LightGBM)
-- [ ] **Feature Engineering**: 
-  - Email header analysis
-  - URL pattern detection
-  - Sender reputation scoring
-
-### Long-term Goals
-- [ ] **Production Deployment**: 
-  - Docker containerization
-  - CI/CD pipeline setup
-  - Cloud deployment (AWS/GCP/Azure)
-- [ ] **Real-time Monitoring**: MLflow integration and logging for deployed models
-- [ ] **A/B Testing**: Framework for model comparison in production
-- [ ] **Mobile Application**: iOS/Android app for spam detection
-- [ ] **Browser Extension**: Chrome/Firefox extension for email clients
+- [ ] **Web Interface**: Simple dashboard for email classification
+- [ ] **Model Comparison**: Test with Naive Bayes and SVM
+- [ ] **Hyperparameter Tuning**: Optimize model performance
+- [ ] **Extended Testing**: Increase test coverage
+- [ ] **Multi-language Support**: Detect spam in different languages
 
 ## 📝 API Integration (Coming Soon)
 
@@ -131,8 +108,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Dataset source: [Specify your dataset source]
-- Inspired by various email spam detection research papers
+- Dataset source: [Kaggle - Spam Email Dataset](https://www.kaggle.com/)
+- Inspired by email spam detection research and best practices
 - Thanks to the open-source community for the amazing tools
 
 ## 📞 Contact
