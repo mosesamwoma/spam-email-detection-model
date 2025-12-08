@@ -8,18 +8,7 @@ A machine learning project for detecting spam emails and messages using a TF-IDF
 
 > **⚠️ Work in Progress:** This repository is currently under development. API integration coming soon!
 
-## 📋 Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Model Performance](#model-performance)
-- [Technologies Used](#technologies-used)
-- [Future Improvements](#future-improvements)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## 🎯 Overview
 
@@ -34,42 +23,7 @@ Email spam detection is a critical component of modern email systems. This proje
 - **Modular Design**: Easily extensible architecture for future improvements
 - **Performance Metrics**: Evaluation with accuracy, precision, recall, and F1-score
 
-## 📁 Project Structure
 
-```
-spam-email-detection-model/
-│
-├── data/
-│   ├── raw/                    # Raw email dataset
-│   └── processed/              # Preprocessed data
-│
-├── src/
-│   ├── __init__.py
-│   ├── preprocessing.py        # Text cleaning and preprocessing
-│   ├── train_model.py          # Model training pipeline
-│   ├── predict.py              # Prediction functions
-│   └── utils.py                # Helper functions and utilities
-│
-├── models/
-│   ├── logistic_regression.pkl # Trained model
-│   └── vectorizer.pkl          # TF-IDF vectorizer
-│
-├── notebooks/
-│   ├── 01_eda.ipynb           # Exploratory Data Analysis
-│   ├── 02_preprocessing.ipynb  # Data preprocessing experiments
-│   └── 03_model_training.ipynb # Model training and evaluation
-│
-├── tests/
-│   ├── __init__.py
-│   ├── test_preprocessing.py
-│   ├── test_train_model.py
-│   └── test_utils.py
-│
-├── requirements.txt
-├── setup.py
-├── README.md
-└── .gitignore
-```
 
 ## 🚀 Installation
 
@@ -86,89 +40,14 @@ spam-email-detection-model/
    cd spam-email-detection-model
    ```
 
-2. **Create a virtual environment**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**
+2. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Install the package in development mode**
-   ```bash
-   pip install -e .
-   ```
 
-## 💻 Usage
 
-### Training the Model
 
-```python
-from src.train_model import train_and_save_model
-
-# Train and save the model
-model, vectorizer, metrics = train_and_save_model(
-    data_path='data/raw/emails.csv',
-    model_path='models/logistic_regression.pkl',
-    vectorizer_path='models/vectorizer.pkl'
-)
-
-print(f"Model Accuracy: {metrics['accuracy']:.4f}")
-```
-
-### Making Predictions
-
-```python
-from src.predict import load_model, predict_email
-
-# Load trained model
-model, vectorizer = load_model(
-    model_path='models/logistic_regression.pkl',
-    vectorizer_path='models/vectorizer.pkl'
-)
-
-# Predict single email
-email_text = "Congratulations! You've won $1,000,000. Click here to claim."
-prediction = predict_email(model, vectorizer, email_text)
-
-print(f"Prediction: {'Spam' if prediction == 1 else 'Ham'}")
-```
-
-### Running Tests
-
-```bash
-# Run all tests
-pytest
-
-# Run with coverage
-pytest --cov=src tests/
-
-# Run specific test file
-pytest tests/test_preprocessing.py
-```
-
-## 📊 Model Performance
-
-| Metric    | Score  |
-|-----------|--------|
-| Accuracy  | 96.5%  |
-| Precision | 95.2%  |
-| Recall    | 94.8%  |
-| F1-Score  | 95.0%  |
-
-### Confusion Matrix
-
-```
-                Predicted
-              Ham    Spam
-Actual  Ham   [950]  [25]
-        Spam  [30]   [995]
-```
-
-*Note: Results may vary based on dataset and hyperparameters*
 
 ## 🛠️ Technologies Used
 
@@ -239,14 +118,6 @@ Response:
 ## 🤝 Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request with improvements.
-
-### How to Contribute
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📄 License
 
