@@ -2,7 +2,10 @@ import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
-def train_and_save_model(X_train, y_train, model_path, vectorizer_path):
+def train_and_save_model(X_train, y_train, model_path: str, vectorizer_path: str):
+    """
+    Train a Naive Bayes model with TF-IDF features and save model & vectorizer.
+    """
     vectorizer = TfidfVectorizer()
     X_train_vec = vectorizer.fit_transform(X_train)
 
@@ -12,5 +15,5 @@ def train_and_save_model(X_train, y_train, model_path, vectorizer_path):
     # Save model and vectorizer
     joblib.dump(model, model_path)
     joblib.dump(vectorizer, vectorizer_path)
-    
+
     return model, vectorizer
