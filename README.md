@@ -117,6 +117,36 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For questions, suggestions, or collaboration opportunities, feel free to reach out!
 
 ---
+## 📞 Contact & Support
 
-⭐ **If you find this project useful, please consider giving it a star!** ⭐
+Have questions, suggestions, or interested in collaboration? I'd love to hear from you!
+
+- 📧 **Email**: [mosesamwoma@gmail.com](mailto:mosesamwoma@gmail.com)
+- 💼 **LinkedIn**: [Moses Amwoma](https://linkedin.com/in/moses-amwoma-74735a324)
+- 🐙 **GitHub**: [@mosesamwoma](https://github.com/mosesamwoma)
+
+---
+
+## ⭐ Support This Project
+
+If you find this project valuable, please consider:
+
+- ⭐ **Star** the repository to show your support
+- 🍴 **Fork** it to build upon for your own projects
+- 📢 **Share** it with others who might benefit
+- 🐛 **Report issues** to help improve the project
+- 🤝 **Contribute** by submitting pull requests
+
+Every star and contribution helps make this project better!
+
+---
+
+<div align="center">
+
+**Made with ❤️ by Moses Amwoma**
+
+*Building intelligent solutions for a safer digital world*
+
+</div>
+
 
