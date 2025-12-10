@@ -6,9 +6,15 @@
 
 A machine learning project for detecting spam emails and messages using a TF-IDF vectorizer and a classification model.
 
-> **⚠️ Work in Progress:** This repository is currently under development. API integration coming soon!
+> **⚠️ Work in Progress:** This repository is currently under development. The trained model and vectorizer are available, but source code and test suites are still being developed. API integration coming soon!
 
+## 📊 Current Status
 
+- ✅ **Trained Model**: Classification model is trained and ready
+- ✅ **TF-IDF Vectorizer**: Vectorizer is trained and available
+- 🚧 **Source Code**: Currently being developed
+- 🚧 **Test Suite**: Unit tests in progress
+- 🔜 **API Integration**: Planned for future release
 
 ## 🎯 Overview
 
@@ -19,11 +25,9 @@ Email spam detection is a critical component of modern email systems. This proje
 - **Text Preprocessing**: Advanced cleaning and normalization of text data
 - **TF-IDF Vectorization**: Efficient text representation for machine learning
 - **Spam Classification**: Machine learning model for accurate spam detection
-- **Unit Testing**: Comprehensive test coverage for preprocessing, model training, and utilities
+- **Unit Testing**: Comprehensive test coverage for preprocessing, model training, and utilities *(in development)*
 - **Modular Design**: Easily extensible architecture for future improvements
 - **Performance Metrics**: Evaluation with accuracy, precision, recall, and F1-score
-
-
 
 ## 🚀 Installation
 
@@ -45,10 +49,6 @@ Email spam detection is a critical component of modern email systems. This proje
    pip install -r requirements.txt
    ```
 
-
-
-
-
 ## 🛠️ Technologies Used
 
 - **Python 3.8+**: Core programming language
@@ -64,6 +64,8 @@ Email spam detection is a critical component of modern email systems. This proje
 
 ## 🔮 Future Improvements
 
+- [ ] **Complete Source Code**: Finalize preprocessing and training scripts
+- [ ] **Complete Test Suite**: Implement comprehensive unit tests
 - [ ] **REST API Integration**: Build API for real-time spam detection
 - [ ] **Web Interface**: Simple dashboard for email classification
 - [ ] **Model Comparison**: Test with Naive Bayes and SVM
@@ -112,11 +114,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Inspired by email spam detection research and best practices
 - Thanks to the open-source community for the amazing tools
 
-## 📞 Contact
-
-For questions, suggestions, or collaboration opportunities, feel free to reach out!
-
----
 ## 📞 Contact & Support
 
 Have questions, suggestions, or interested in collaboration? I'd love to hear from you!
@@ -148,5 +145,3 @@ Every star and contribution helps make this project better!
 *Building intelligent solutions for a safer digital world*
 
 </div>
-
-
