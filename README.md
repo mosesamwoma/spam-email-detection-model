@@ -66,6 +66,12 @@ Email spam detection is a critical component of modern email systems. This proje
 
 - [ ] **Complete Source Code**: Finalize preprocessing and training scripts
 - [ ] **Complete Test Suite**: Implement comprehensive unit tests
+- [ ] **Requirements.txt**: Add complete dependency specifications *(in progress)*
+- [ ] **Ensemble Modeling**: Implement ensemble methods for improved accuracy
+  - Voting Classifier (Logistic Regression + Naive Bayes + SVM)
+  - Random Forest
+  - Gradient Boosting (XGBoost/LightGBM)
+  - Stacking methods
 - [ ] **REST API Integration**: Build API for real-time spam detection
 - [ ] **Web Interface**: Simple dashboard for email classification
 - [ ] **Model Comparison**: Test with Naive Bayes and SVM
