@@ -14,7 +14,7 @@ A machine learning project for detecting spam emails and messages using a TF-IDF
 
 - ✅ **Trained Model**: Classification model is trained and deployed
 - ✅ **TF-IDF Vectorizer**: Vectorizer is trained and available
-- ✅ **REST API**: Live and accessible at [https://spam-email-api-ece2.onrender.com](https://spam-email-api-ece2.onrender.com/docs)
+- ✅ **REST API**: Live and accessible at [https://spam-email-api-ece2.onrender.com](https://spam-email-detection-model.onrender.com/docs#/default/predict_predict_post)
 - 🚧 **Source Code**: Currently being developed
 - 🚧 **Test Suite**: Unit tests in progress
 
@@ -236,6 +236,7 @@ Every star and contribution helps make this project better!
 
 *Building intelligent solutions for a safer digital world*
 
-**[Try the API Now](https://spam-email-api-ece2.onrender.com/docs)**
+**[Try the API Now](https://spam-email-detection-model.onrender.com/docs#/default/predict_predict_post)**
 
 </div>
+
