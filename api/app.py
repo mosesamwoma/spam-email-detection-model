@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 import joblib
 import os
 
@@ -16,12 +16,19 @@ VECTORIZER_PATH = os.path.join(BASE_DIR, "models", "tfidf_vectorizer.pkl")
 model = joblib.load(MODEL_PATH)
 vectorizer = joblib.load(VECTORIZER_PATH)
 
-class EmailText(BaseModel):
-    text: str
-
 @app.get("/")
 def home():
-    return {"message": "Spam Email Detection API is running 🚀"}
+    return {
+        "message": "Welcome to the Spam Email Detection API 🚀",
+        "docs": "/docs",
+        "predict": "/predict"
+    }
+
+class EmailText(BaseModel):
+    text: str = Field(
+        ...,
+        example="You've won a free iPhone! Click to claim."
+    )
 
 @app.post("/predict")
 def predict(email: EmailText):
