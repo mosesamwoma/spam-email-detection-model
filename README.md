@@ -230,22 +230,12 @@ Every star and contribution helps make this project better!
 
 ---
 
-## 🎯 Use Cases
-
-- **Email Filtering**: Integrate into email clients for automatic spam detection
-- **Message Validation**: Filter spam in messaging applications
-- **Content Moderation**: Screen user-generated content for spam
-- **Research**: Study spam detection techniques and model performance
-- **Education**: Learn about machine learning and NLP applications
-
----
-
 <div align="center">
 
 **Made with ❤️ by Moses Amwoma**
 
 *Building intelligent solutions for a safer digital world*
 
-**[Try the API Now](https://spam-email-api-ece2.onrender.com/docs)** | **[View on GitHub](https://github.com/mosesamwoma/spam-email-detection-model)**
+**[Try the API Now](https://spam-email-api-ece2.onrender.com/docs)**
 
 </div>
