@@ -3,9 +3,12 @@
 [![Python Version](https://img.shields.io/badge/python-3.13-blue)](https://www.python.org/)
 [![API Status](https://img.shields.io/badge/API-live-brightgreen)](https://spam-email-api-ece2.onrender.com/docs)
 [![Deployed on Render](https://img.shields.io/badge/deployed%20on-Render-46E3B7)](https://render.com)
+[![Status](https://img.shields.io/badge/status-in%20development-orange)](https://github.com/mosesamwoma/spam-email-detection-model)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 A machine learning project for detecting spam emails and messages using a TF-IDF vectorizer and a classification model. **Now with a live REST API!**
+
+> **⚠️ Project Status:** This project is currently under active development. The API is live and functional, but source code, documentation, and test suites are still being finalized.
 
 ## 📊 Current Status
 
