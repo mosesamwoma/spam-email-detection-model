@@ -9,7 +9,7 @@ app = FastAPI(
     version="1.0"
 )
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODEL_PATH = os.path.join(BASE_DIR, "models", "spam_classifier_model.pkl")
 VECTORIZER_PATH = os.path.join(BASE_DIR, "models", "tfidf_vectorizer.pkl")
 
@@ -18,6 +18,10 @@ vectorizer = joblib.load(VECTORIZER_PATH)
 
 class EmailText(BaseModel):
     text: str
+
+@app.get("/")
+def home():
+    return {"message": "Spam Email Detection API is running 🚀"}
 
 @app.post("/predict")
 def predict(email: EmailText):
