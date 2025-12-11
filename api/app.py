@@ -9,12 +9,10 @@ app = FastAPI(
     version="1.0"
 )
 
-# Absolute paths can also be used, but let's make it relative for portability
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # tic-tac-toe folder
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  
 MODEL_PATH = os.path.join(BASE_DIR, "models", "spam_classifier_model.pkl")
 VECTORIZER_PATH = os.path.join(BASE_DIR, "models", "tfidf_vectorizer.pkl")
 
-# Load model and vectorizer
 model = joblib.load(MODEL_PATH)
 vectorizer = joblib.load(VECTORIZER_PATH)
 
