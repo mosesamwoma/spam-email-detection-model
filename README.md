@@ -169,9 +169,8 @@ Visit the interactive API documentation at [https://spam-email-api-ece2.onrender
 
 - [ ] **Complete Source Code**: Finalize preprocessing and training scripts
 - [ ] **Complete Test Suite**: Implement comprehensive unit tests
-- [x] **REST API Integration**: Build API for real-time spam detection ✅
-- [ ] **Web Interface**: Simple dashboard for email classification
-- [ ] **Batch Processing**: Support for multiple email classification
+- [x] **REST API Integration**: Build API for real-time spam detection 
+✅- [ ] **Batch Processing**: Support for multiple email classification
 - [ ] **Ensemble Modeling**: Implement ensemble methods for improved accuracy
   - Voting Classifier (Logistic Regression + Naive Bayes + SVM)
   - Random Forest
@@ -239,4 +238,5 @@ Every star and contribution helps make this project better!
 **[Try the API Now](https://spam-email-detection-model.onrender.com/docs#/default/predict_predict_post)**
 
 </div>
+
 
