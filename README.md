@@ -3,10 +3,12 @@
 [![Python Version](https://img.shields.io/badge/python-3.13-blue)](https://www.python.org/)
 [![API Status](https://img.shields.io/badge/API-live-brightgreen)](https://spam-email-api-ece2.onrender.com/docs)
 [![Deployed on Render](https://img.shields.io/badge/deployed%20on-Render-46E3B7)](https://render.com)
-[![Status](https://img.shields.io/badge/status-active-success)](https://github.com/mosesamwoma/spam-email-detection-model)
+[![Status](https://img.shields.io/badge/status-in%20development-orange)](https://github.com/mosesamwoma/spam-email-detection-model)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-A production-ready machine learning API for detecting spam emails and messages using TF-IDF vectorization and classification algorithms. Built with FastAPI and deployed on Render.
+A machine learning API for detecting spam emails and messages using TF-IDF vectorization and classification algorithms. Built with FastAPI and deployed on Render.
+
+> **⚠️ Project Status:** This project is currently under active development.
 
 ## 📊 Project Status
 
@@ -99,10 +101,6 @@ Classify an email or message as spam or ham (legitimate).
 }
 ```
 
-**Parameters:**
-- `email_text` (string, required): The email or message text to classify
-- `return_confidence` (boolean, optional): Include confidence score (default: true)
-
 **Response Fields:**
 - `prediction` (string): Classification result - "spam" or "ham"
 - `confidence` (float): Confidence score between 0 and 1
@@ -154,11 +152,6 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
    uvicorn api.app:app --reload --host 0.0.0.0 --port 8000
    ```
 
-5. **Access the application**
-   - API: http://localhost:8000
-   - Interactive Docs: http://localhost:8000/docs
-   - Health Check: http://localhost:8000/health
-
 ## 🛠️ Technology Stack
 
 ### Core Technologies
@@ -177,24 +170,9 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
 ### Natural Language Processing
 - **nltk**: Text preprocessing and tokenization
 
-### Visualization & Analysis
-- **matplotlib**: Data visualization
-- **seaborn**: Statistical data visualization
-
 ### Testing & Deployment
 - **pytest**: Testing framework
 - **Render**: Cloud deployment platform
-
-## 📈 Model Performance
-
-The spam detection model achieves strong performance metrics:
-
-- **Accuracy**: High classification accuracy on test data
-- **Precision**: Minimizes false positives
-- **Recall**: Effectively identifies spam messages
-- **F1-Score**: Balanced performance measure
-
-*Detailed metrics and evaluation reports available in project documentation*
 
 ## 🔮 Roadmap & Future Enhancements
 
@@ -216,18 +194,6 @@ The spam detection model achieves strong performance metrics:
 - [ ] **Extended Test Coverage**: Comprehensive unit and integration tests
 - [ ] **Model Monitoring**: Performance tracking and drift detection
 - [ ] **Email Parser Integration**: Automatic header and content extraction
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-Please ensure your code follows the project's coding standards and includes appropriate tests.
 
 ## 📄 License
 
