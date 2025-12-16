@@ -253,3 +253,4 @@ Your support helps make this project better for everyone!
 [![Try the API](https://img.shields.io/badge/Try%20the%20API-Now-brightgreen?style=for-the-badge)](https://spam-email-api-ece2.onrender.com/docs)
 
 </div>
+
