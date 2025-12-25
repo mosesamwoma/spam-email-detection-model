@@ -5,7 +5,7 @@ import os
 
 app = FastAPI(
     title="Spam Email Detection API",
-    description="API to classify email text as spam or not spam",
+    description="API to classify email text as spam or not spam(ham)",
     version="1.0"
 )
 
