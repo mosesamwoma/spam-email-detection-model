@@ -39,5 +39,5 @@ class EmailText(BaseModel):
 def predict(email: EmailText):
     X = vectorizer.transform([email.text])
     pred = model.predict(X)[0]
-    spam_bool = bool(pred)
-    return {"spam": spam_bool}
+    result = "spam" if pred == 1 else "not spam"
+    return {"prediction": result}
