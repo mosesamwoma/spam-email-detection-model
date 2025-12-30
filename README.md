@@ -10,6 +10,20 @@ A machine learning API for detecting spam emails and messages using TF-IDF vecto
 
 > **⚠️ Project Status:** This project is currently under active development.
 
+## 🎬 API in Action
+
+See the Spam Detection API in action! The demo below shows real-time email classification through the interactive Swagger UI interface.
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/mosesamwoma/spam-email-detection-model/main/video/main.gif" alt="API Demo" width="800" />
+</div>
+
+**What you're seeing:**
+- Interactive API testing via Swagger UI
+- Real-time spam classification with confidence scores
+- Instant JSON responses with predictions
+- Simple integration with any application
+
 ## 📊 Project Status
 
 - ✅ **Trained Model**: Logistic Regression classifier trained and optimized
@@ -74,8 +88,6 @@ result = response.json()
 print(f"Prediction: {result['prediction']}")
 print(f"Confidence: {result['confidence']:.2%}")
 ```
-
-
 
 ## 📡 API Documentation
 
@@ -151,6 +163,11 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
    ```bash
    uvicorn api.app:app --reload --host 0.0.0.0 --port 8000
    ```
+
+5. **Access the API**
+   - API: http://localhost:8000
+   - Interactive Docs: http://localhost:8000/docs
+   - Health Check: http://localhost:8000/health
 
 ## 🛠️ Technology Stack
 
@@ -253,4 +270,3 @@ Your support helps make this project better for everyone!
 [![Try the API](https://img.shields.io/badge/Try%20the%20API-Now-brightgreen?style=for-the-badge)](https://spam-email-api-ece2.onrender.com/docs)
 
 </div>
-
