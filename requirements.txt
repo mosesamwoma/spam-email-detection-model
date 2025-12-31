@@ -2,3 +2,9 @@ fastapi
 uvicorn
 joblib
 scikit-learn
+pandas
+numpy
+seaborn
+matplotlib
+pytest
+
