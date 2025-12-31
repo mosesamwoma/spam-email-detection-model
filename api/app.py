@@ -27,9 +27,9 @@ vectorizer = joblib.load(VECTORIZER_PATH)
 @app.get("/")
 def home():
     return {
-        "message": "Welcome to the Spam Email Detection API 🚀",
-        "docs": "/docs",
-        "predict": "/predict"
+        "message":"Welcome to the Spam Email Detection API 🚀",
+        "docs":"/docs",
+        "predict":"/predict"
     }
 
 class EmailText(BaseModel):
