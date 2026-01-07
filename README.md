@@ -17,7 +17,6 @@ See the Spam Detection API in action! The demo below shows real-time email class
 **What you're seeing:**
 - Interactive API testing via Swagger UI
 - Real-time spam classification with confidence scores
-- Instant JSON responses with predictions
 - Simple integration with any application
 
 ## 📊 Project Status
@@ -138,9 +137,6 @@ The SpamCheck desktop application is available for Windows x64 systems.
 
 - 🖥️ **Native Windows UI**: Built specifically for Windows with familiar controls
 - 📋 **Copy & Paste**: Easy text input from any source
-- 💾 **History**: Track previously analyzed emails (local only)
-- 🎨 **Dark/Light Mode**: Choose your preferred theme
-- 🔔 **Notifications**: Desktop alerts for spam detection
 - ⚡ **Fast Performance**: Optimized for quick analysis
 
 ### System Requirements
@@ -298,8 +294,6 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
 - **Render**: Cloud deployment platform
 
 ## 🔮 Roadmap & Future Enhancements
-
-### Short-term Goals (Next 1-3 Months)
 - [ ] **Chrome Web Store Publishing**: Submit extension for review and public release
 - [ ] **API Authentication**: Implement API key-based authentication for security
 - [ ] **Rate Limiting**: Add request throttling to prevent abuse
@@ -307,8 +301,6 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
 - [ ] **Model Performance Monitoring**: Track prediction accuracy and response times
 - [ ] **Extended Test Coverage**: Add comprehensive unit and integration tests
 - [ ] **Desktop App Auto-Updates**: Implement automatic update mechanism
-
-### Medium-term Goals (3-6 Months)
 - [ ] **Alternative ML Models**: Test and compare additional algorithms
   - Naive Bayes classifier
   - Support Vector Machines (SVM)
@@ -320,8 +312,6 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
 - [ ] **Extension Improvements**: Enhanced UI and additional features
 - [ ] **macOS Desktop App**: Port application to macOS
 - [ ] **Linux Desktop App**: Create Linux-compatible version
-
-### Long-term Vision (6+ Months)
 - [ ] **Multi-language Support**: Extend detection to non-English emails
 - [ ] **Advanced Ensemble Methods**: Explore more sophisticated combinations if needed
 - [ ] **Firefox Extension**: Port extension to Firefox Add-ons
@@ -342,9 +332,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Moses Amwoma**
 
 - 🐙 GitHub: [@mosesamwoma](https://github.com/mosesamwoma)
-- 💼 LinkedIn: [Moses Amwoma](https://linkedin.com/in/moses-amwoma-74735a324)
+- 💼 LinkedIn: [Moses Amwoma](https://linkedin.com/in/moses-amwoma)
 - 📧 Email: [mosesamwoma@gmail.com](mailto:mosesamwoma@gmail.com)
-- 🔗 API Project: [Spam Email Detection Model](https://github.com/mosesamwoma/spam-email-detection-model)
 - 🔗 Extension Project: [Chrome Extension](https://github.com/mosesamwoma/chrome-extension)
 - 🔗 Desktop App: [SpamCheck Windows App](https://github.com/mosesamwoma/SpamCheck-app)
 
@@ -352,9 +341,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Dataset source: [Kaggle Spam Email Dataset](https://www.kaggle.com/)
 - Inspired by email security research and industry best practices
-- Built with amazing open-source tools and libraries
 - Deployed on [Render](https://render.com) for reliable cloud hosting
-- Thanks to the ML and NLP communities for continuous innovation
 
 ## 📞 Contact & Support
 
@@ -407,3 +394,4 @@ Your support helps make this project better for everyone!
 [![Try the API](https://img.shields.io/badge/Try%20the%20API-Now-brightgreen?style=for-the-badge)](https://spam-email-api-ece2.onrender.com/docs)
 [![Get Extension](https://img.shields.io/badge/Get%20Extension-GitHub-blue?style=for-the-badge)](https://github.com/mosesamwoma/chrome-extension)
 [![Download App](https://img.shields.io/badge/Download%20App-Windows-0078D4?style=for-the-badge)](https://github.com/mosesamwoma/SpamCheck-app/releases)
+
