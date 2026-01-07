@@ -293,35 +293,21 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
 - **pytest**: Testing framework
 - **Render**: Cloud deployment platform
 
-## 🔮 Roadmap & Future Enhancements
-- [ ] **Chrome Web Store Publishing**: Submit extension for review and public release
-- [ ] **API Authentication**: Implement API key-based authentication for security
-- [ ] **Rate Limiting**: Add request throttling to prevent abuse
-- [ ] **Batch Processing**: Support analyzing multiple emails in a single request
-- [ ] **Model Performance Monitoring**: Track prediction accuracy and response times
-- [ ] **Extended Test Coverage**: Add comprehensive unit and integration tests
-- [ ] **Desktop App Auto-Updates**: Implement automatic update mechanism
-- [ ] **Alternative ML Models**: Test and compare additional algorithms
-  - Naive Bayes classifier
-  - Support Vector Machines (SVM)
-  - Simple ensemble voting classifier
-- [ ] **Model Retraining Pipeline**: Automated retraining with new spam patterns
-- [ ] **Response Caching**: Implement Redis for frequently checked content
-- [ ] **Usage Analytics Dashboard**: Basic metrics and usage statistics
-- [ ] **Documentation Expansion**: Add tutorials, examples, and best practices
-- [ ] **Extension Improvements**: Enhanced UI and additional features
-- [ ] **macOS Desktop App**: Port application to macOS
-- [ ] **Linux Desktop App**: Create Linux-compatible version
-- [ ] **Multi-language Support**: Extend detection to non-English emails
-- [ ] **Advanced Ensemble Methods**: Explore more sophisticated combinations if needed
-- [ ] **Firefox Extension**: Port extension to Firefox Add-ons
-- [ ] **Mobile SDK**: Consider lightweight mobile integration options
-- [ ] **Phishing Detection**: Add specialized phishing identification features
-- [ ] **Email Header Analysis**: Incorporate sender verification and metadata checks
-- [ ] **Offline Mode**: Enable desktop app to work without internet connection
-- [ ] **Custom Model Training**: Allow users to train models on their own datasets
+## 🔮 Future Improvements
 
-> **Note**: This roadmap is subject to change based on user feedback, resource availability, and emerging priorities. Features will be developed incrementally with a focus on stability and practical utility.
+### Short-term
+- [ ] Publish Chrome extension to Web Store
+- [ ] Add API key authentication
+- [ ] Implement rate limiting
+- [ ] Add batch email processing endpoint
+- [ ] Expand test coverage
+
+### Medium-term
+- [ ] Add usage analytics dashboard
+- [ ] Test Naive Bayes and SVM classifiers
+- [ ] Implement response caching with Redis
+- [ ] Add Firefox extension support
+- [ ] Create macOS desktop app
 
 ## 📄 License
 
@@ -394,4 +380,3 @@ Your support helps make this project better for everyone!
 [![Try the API](https://img.shields.io/badge/Try%20the%20API-Now-brightgreen?style=for-the-badge)](https://spam-email-api-ece2.onrender.com/docs)
 [![Get Extension](https://img.shields.io/badge/Get%20Extension-GitHub-blue?style=for-the-badge)](https://github.com/mosesamwoma/chrome-extension)
 [![Download App](https://img.shields.io/badge/Download%20App-Windows-0078D4?style=for-the-badge)](https://github.com/mosesamwoma/SpamCheck-app/releases)
-
