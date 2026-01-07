@@ -16,7 +16,6 @@ See the Spam Detection API in action! The demo below shows real-time email class
 
 **What you're seeing:**
 - Interactive API testing via Swagger UI
-- Real-time spam classification with confidence scores
 - Instant JSON responses with predictions
 - Simple integration with any application
 
@@ -275,18 +274,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Moses Amwoma**
 
 - 🐙 GitHub: [@mosesamwoma](https://github.com/mosesamwoma)
-- 💼 LinkedIn: [Moses Amwoma](https://linkedin.com/in/moses-amwoma-74735a324)
+- 💼 LinkedIn: [Moses Amwoma](https://linkedin.com/in/moses-amwoma)
 - 📧 Email: [mosesamwoma@gmail.com](mailto:mosesamwoma@gmail.com)
-- 🔗 API Project: [Spam Email Detection Model](https://github.com/mosesamwoma/spam-email-detection-model)
 - 🔗 Extension Project: [Chrome Extension](https://github.com/mosesamwoma/chrome-extension)
 
 ## 🙏 Acknowledgments
 
 - Dataset source: [Kaggle Spam Email Dataset](https://www.kaggle.com/)
 - Inspired by email security research and industry best practices
-- Built with amazing open-source tools and libraries
 - Deployed on [Render](https://render.com) for reliable cloud hosting
-- Thanks to the ML and NLP communities for continuous innovation
 
 ## 📞 Contact & Support
 
@@ -295,7 +291,6 @@ Questions, suggestions, or collaboration opportunities? Let's connect!
 - 📧 **Email**: [mosesamwoma@gmail.com](mailto:mosesamwoma@gmail.com)
 - 💼 **LinkedIn**: [Moses Amwoma](https://linkedin.com/in/moses-amwoma-74735a324)
 - 🐙 **GitHub**: [@mosesamwoma](https://github.com/mosesamwoma)
-- 📚 **API Docs**: [Interactive Documentation](https://spam-email-api-ece2.onrender.com/docs)
 - 🐛 **Report Issues**: 
   - API: [GitHub Issues](https://github.com/mosesamwoma/spam-email-detection-model/issues)
   - Extension: [GitHub Issues](https://github.com/mosesamwoma/chrome-extension/issues)
@@ -325,3 +320,4 @@ Your support helps make this project better for everyone!
 
 [![Try the API](https://img.shields.io/badge/Try%20the%20API-Now-brightgreen?style=for-the-badge)](https://spam-email-api-ece2.onrender.com/docs)
 [![Get Extension](https://img.shields.io/badge/Get%20Extension-GitHub-blue?style=for-the-badge)](https://github.com/mosesamwoma/chrome-extension)
+
