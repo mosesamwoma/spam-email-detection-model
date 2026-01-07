@@ -14,10 +14,6 @@ A machine learning API for detecting spam emails and messages using TF-IDF vecto
 
 See the Spam Detection API in action! The demo below shows real-time email classification through the interactive Swagger UI interface.
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/mosesamwoma/spam-email-detection-model/main/video/main.gif" alt="API Demo" width="800" />
-</div>
-
 **What you're seeing:**
 - Interactive API testing via Swagger UI
 - Real-time spam classification with confidence scores
@@ -31,16 +27,18 @@ See the Spam Detection API in action! The demo below shows real-time email class
 - ✅ **REST API**: Live and production-ready
 - ✅ **Interactive Docs**: Swagger UI available for testing
 - ✅ **Cloud Deployment**: Hosted on Render with 99.9% uptime
+- ✅ **Chrome Extension**: Built and ready for testing (pending Web Store deployment)
 - 🚧 **Extended Features**: Authentication and batch processing in development
 
 ## 🎯 Overview
 
 Email spam detection is essential for maintaining secure and efficient communication systems. This project implements a machine learning solution using TF-IDF vectorization and Logistic Regression to automatically identify and filter spam emails with high accuracy.
 
-The model is deployed as a REST API, making it simple to integrate spam detection capabilities into any application or workflow.
+The model is deployed as a REST API, making it simple to integrate spam detection capabilities into any application or workflow. A Chrome extension is also available for browser-based email protection.
 
 ## ✨ Key Features
 
+### Core API Features
 - **Advanced Text Processing**: Comprehensive cleaning and normalization pipeline
 - **TF-IDF Vectorization**: Efficient text-to-vector transformation
 - **High-Accuracy Classification**: Trained model with optimized performance metrics
@@ -49,6 +47,13 @@ The model is deployed as a REST API, making it simple to integrate spam detectio
 - **Real-time Predictions**: Instant spam classification with confidence scores
 - **Health Monitoring**: Built-in health check endpoint
 - **Production Ready**: Deployed on reliable cloud infrastructure
+
+### Chrome Extension (Coming Soon)
+- **Browser Integration**: Seamless email checking directly in your browser
+- **One-Click Detection**: Instant spam analysis with a single click
+- **Privacy-Focused**: Email content processed securely through the API
+- **Visual Feedback**: Clear indicators for spam and legitimate emails
+- **Lightweight**: Minimal resource usage for smooth browsing
 
 ## 🚀 Quick Start - Using the API
 
@@ -63,6 +68,7 @@ The API is live and ready to use! No installation or setup required.
 ### Example Usage
 
 #### Using cURL
+
 ```bash
 curl -X POST "https://spam-email-api-ece2.onrender.com/api/v1/predict" \
   -H "Content-Type: application/json" \
@@ -73,6 +79,7 @@ curl -X POST "https://spam-email-api-ece2.onrender.com/api/v1/predict" \
 ```
 
 #### Using Python
+
 ```python
 import requests
 
@@ -89,11 +96,50 @@ print(f"Prediction: {result['prediction']}")
 print(f"Confidence: {result['confidence']:.2%}")
 ```
 
+## 🔌 Chrome Extension
+
+### Installation (Developer Mode)
+
+The Chrome extension is currently available for testing but not yet published to the Chrome Web Store.
+
+**Repository**: [https://github.com/mosesamwoma/chrome-extension](https://github.com/mosesamwoma/chrome-extension)
+
+#### Manual Installation Steps:
+
+1. **Clone the extension repository**
+   ```bash
+   git clone https://github.com/mosesamwoma/chrome-extension.git
+   cd chrome-extension
+   ```
+
+2. **Open Chrome Extensions page**
+   - Navigate to `chrome://extensions/`
+   - Enable "Developer mode" (toggle in top right)
+
+3. **Load the extension**
+   - Click "Load unpacked"
+   - Select the cloned extension directory
+
+4. **Start using**
+   - The extension icon will appear in your browser toolbar
+   - Click it to analyze email text for spam
+
+### Extension Features
+
+- 🎯 **Instant Analysis**: Check emails with one click
+- 🔒 **Secure**: All processing via encrypted API calls
+- 💡 **Smart Alerts**: Visual indicators for spam detection
+- ⚡ **Fast**: Real-time results in seconds
+- 🎨 **Clean UI**: Simple, intuitive interface
+
+> **Note**: The extension will be published to the Chrome Web Store soon for easier installation.
+
 ## 📡 API Documentation
 
 ### Endpoints
 
 #### POST `/api/v1/predict`
+
 Classify an email or message as spam or ham (legitimate).
 
 **Request Body:**
@@ -119,6 +165,7 @@ Classify an email or message as spam or ham (legitimate).
 - `timestamp` (string): ISO 8601 formatted timestamp
 
 #### GET `/health`
+
 Health check endpoint to verify API availability.
 
 **Response:**
@@ -130,6 +177,7 @@ Health check endpoint to verify API availability.
 ```
 
 ### Try It Out!
+
 Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.com/docs) to test endpoints directly in your browser with the Swagger UI interface.
 
 ## 💻 Local Development
@@ -187,6 +235,9 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
 ### Natural Language Processing
 - **nltk**: Text preprocessing and tokenization
 
+### Browser Integration
+- **Chrome Extension**: Native browser integration for seamless email checking
+
 ### Testing & Deployment
 - **pytest**: Testing framework
 - **Render**: Cloud deployment platform
@@ -194,6 +245,7 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
 ## 🔮 Roadmap & Future Enhancements
 
 ### In Development
+- [ ] **Chrome Web Store Publishing**: Official extension listing
 - [ ] **Batch Processing API**: Support for bulk email classification
 - [ ] **API Authentication**: Secure API key-based authentication
 - [ ] **Rate Limiting**: Request throttling for production environments
@@ -211,6 +263,8 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
 - [ ] **Extended Test Coverage**: Comprehensive unit and integration tests
 - [ ] **Model Monitoring**: Performance tracking and drift detection
 - [ ] **Email Parser Integration**: Automatic header and content extraction
+- [ ] **Firefox & Edge Extensions**: Multi-browser support
+- [ ] **Extension Analytics**: Usage statistics and detection patterns
 
 ## 📄 License
 
@@ -223,7 +277,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 🐙 GitHub: [@mosesamwoma](https://github.com/mosesamwoma)
 - 💼 LinkedIn: [Moses Amwoma](https://linkedin.com/in/moses-amwoma-74735a324)
 - 📧 Email: [mosesamwoma@gmail.com](mailto:mosesamwoma@gmail.com)
-- 🔗 Project: [Spam Email Detection Model](https://github.com/mosesamwoma/spam-email-detection-model)
+- 🔗 API Project: [Spam Email Detection Model](https://github.com/mosesamwoma/spam-email-detection-model)
+- 🔗 Extension Project: [Chrome Extension](https://github.com/mosesamwoma/chrome-extension)
 
 ## 🙏 Acknowledgments
 
@@ -241,7 +296,9 @@ Questions, suggestions, or collaboration opportunities? Let's connect!
 - 💼 **LinkedIn**: [Moses Amwoma](https://linkedin.com/in/moses-amwoma-74735a324)
 - 🐙 **GitHub**: [@mosesamwoma](https://github.com/mosesamwoma)
 - 📚 **API Docs**: [Interactive Documentation](https://spam-email-api-ece2.onrender.com/docs)
-- 🐛 **Report Issues**: [GitHub Issues](https://github.com/mosesamwoma/spam-email-detection-model/issues)
+- 🐛 **Report Issues**: 
+  - API: [GitHub Issues](https://github.com/mosesamwoma/spam-email-detection-model/issues)
+  - Extension: [GitHub Issues](https://github.com/mosesamwoma/chrome-extension/issues)
 
 ---
 
@@ -249,24 +306,22 @@ Questions, suggestions, or collaboration opportunities? Let's connect!
 
 If you find this project helpful, please consider:
 
-- ⭐ **Star** the repository to show your appreciation
-- 🍴 **Fork** it to build upon for your own projects
-- 📢 **Share** it with colleagues and friends
+- ⭐ **Star** the repositories to show your appreciation
+- 🍴 **Fork** them to build upon for your own projects
+- 📢 **Share** them with colleagues and friends
 - 🐛 **Report bugs** to help improve quality
 - 💡 **Suggest features** for future development
 - 🤝 **Contribute** by submitting pull requests
 - 🚀 **Use the API** in your applications and projects
+- 🔌 **Test the extension** and provide feedback
 
 Your support helps make this project better for everyone!
 
 ---
-
-<div align="center">
 
 **Made with ❤️ by Moses Amwoma**
 
 *Building intelligent solutions for a safer digital world*
 
 [![Try the API](https://img.shields.io/badge/Try%20the%20API-Now-brightgreen?style=for-the-badge)](https://spam-email-api-ece2.onrender.com/docs)
-
-</div>
+[![Get Extension](https://img.shields.io/badge/Get%20Extension-GitHub-blue?style=for-the-badge)](https://github.com/mosesamwoma/chrome-extension)
