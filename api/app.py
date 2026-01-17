@@ -35,6 +35,10 @@ def home():
 class EmailText(BaseModel):
     text: str = Field(..., example="You've won a free iPhone! Click to claim.")
 
+@app.get("/hello")
+def hello():
+    return {"message": "Hello! Welcome to the Spam Email Detection API"}
+
 @app.post("/predict")
 def predict(email: EmailText):
     X = vectorizer.transform([email.text])
