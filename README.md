@@ -380,3 +380,4 @@ Your support helps make this project better for everyone!
 [![Try the API](https://img.shields.io/badge/Try%20the%20API-Now-brightgreen?style=for-the-badge)](https://spam-email-api-ece2.onrender.com/docs)
 [![Get Extension](https://img.shields.io/badge/Get%20Extension-GitHub-blue?style=for-the-badge)](https://github.com/mosesamwoma/chrome-extension)
 [![Download App](https://img.shields.io/badge/Download%20App-Windows-0078D4?style=for-the-badge)](https://github.com/mosesamwoma/SpamCheck-app/releases)
+
