@@ -18,7 +18,7 @@ A machine learning API for detecting spam emails and messages using TF-IDF vecto
 
 ## 🎯 Overview
 
-This project implements a machine learning solution using TF-IDF vectorization and Logistic Regression to automatically identify and filter spam emails with high accuracy. The model is deployed as a REST API, making it simple to integrate spam detection capabilities into any application or workflow.
+This project implements a machine learning solution using TF-IDF vectorization and Logistic Regression to automatically identify and filter spam emails with high accuracy. The model is deployed as a FAST API, making it simple to integrate spam detection capabilities into any application or workflow.
 
 ## ✨ Key Features
 
@@ -237,3 +237,4 @@ If you find this project helpful:
 
 [![Try the API](https://img.shields.io/badge/Try%20the%20API-Now-brightgreen?style=for-the-badge)](https://spam-email-api-ece2.onrender.com/docs)
 [![Download App](https://img.shields.io/badge/Download%20App-Windows-0078D4?style=for-the-badge)](https://github.com/mosesamwoma/SpamCheck-app/releases)
+
