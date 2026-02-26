@@ -13,7 +13,7 @@ A machine learning API for detecting spam emails and messages using TF-IDF vecto
 
 **What you're seeing:**
 - Interactive API testing via Swagger UI
-- Real-time spam classification with confidence scores
+- Real-time spam classification
 - Simple integration with any application
 
 ## 🎯 Overview
@@ -173,8 +173,6 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
 - pandas
 - numpy
 
-**NLP:**
-- nltk
 
 **Deployment:**
 - Render (Cloud platform)
