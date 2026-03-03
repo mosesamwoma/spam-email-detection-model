@@ -7,7 +7,7 @@
 
 A machine learning API for detecting spam emails and messages using TF-IDF vectorization and Logistic Regression. Built with FastAPI and deployed on Render.
 
-## 🎬 API in Action
+##  API in Action
 
 ![API Demo](video/main.gif)
 
@@ -16,11 +16,11 @@ A machine learning API for detecting spam emails and messages using TF-IDF vecto
 - Real-time spam classification
 - Simple integration with any application
 
-## 🎯 Overview
+##  Overview
 
 This project implements a machine learning solution using TF-IDF vectorization and Logistic Regression to automatically identify and filter spam emails with high accuracy. The model is deployed as a FAST API, making it simple to integrate spam detection capabilities into any application or workflow.
 
-## ✨ Key Features
+##  Key Features
 
 - **High-Accuracy Classification**: Trained Logistic Regression model with optimized performance
 - **TF-IDF Vectorization**: Efficient text-to-vector transformation
@@ -30,7 +30,7 @@ This project implements a machine learning solution using TF-IDF vectorization a
 - **Production Ready**: Deployed on reliable cloud infrastructure
 - **Windows Desktop App**: Native application for easy access
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Using the Live API
 
@@ -40,16 +40,7 @@ The API is live and ready to use! No installation required.
 
 **Interactive Docs**: [https://spam-email-api-ece2.onrender.com/docs](https://spam-email-api-ece2.onrender.com/docs)
 
-#### Example with cURL
 
-```bash
-curl -X POST "https://spam-email-api-ece2.onrender.com/api/v1/predict" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "email_text": "Congratulations! You have won $1,000,000! Click here to claim now!",
-    "return_confidence": true
-  }'
-```
 
 #### Example with Python
 
@@ -69,7 +60,7 @@ print(f"Prediction: {result['prediction']}")
 print(f"Confidence: {result['confidence']:.2%}")
 ```
 
-## 💻 Windows Desktop Application
+##  Windows Desktop Application
 
 Download the SpamCheck desktop application for Windows x64 systems.
 
@@ -78,14 +69,14 @@ Download the SpamCheck desktop application for Windows x64 systems.
 **Download**: [Latest Release](https://github.com/mosesamwoma/SpamCheck-app/releases)
 
 **Features:**
-- 🖥️ Native Windows UI with familiar controls
-- 📋 Easy copy & paste functionality
-- ⚡ Fast performance and quick analysis
-- 🔒 Secure API communication
+-  Native Windows UI with familiar controls
+-  Easy copy & paste functionality
+-  Fast performance and quick analysis
+-  Secure API communication
 
 **System Requirements:** Windows 10/11 (64-bit), 4GB RAM, Internet connection
 
-## 📡 API Documentation
+##  API Documentation
 
 ### Endpoints
 
@@ -104,9 +95,7 @@ Classify an email or message as spam or ham (legitimate).
 **Response:**
 ```json
 {
-  "prediction": "spam",
-  "confidence": 0.97,
-  "timestamp": "2025-12-12T14:30:00Z"
+  "prediction": "spam"
 }
 ```
 
@@ -126,7 +115,7 @@ Health check endpoint to verify API availability.
 
 Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.com/docs) to test endpoints directly in your browser.
 
-## 💻 Local Development
+##  Local Development
 
 ### Prerequisites
 
@@ -161,7 +150,7 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
    - API: http://localhost:8000
    - Interactive Docs: http://localhost:8000/docs
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 **Core Technologies:**
 - Python 3.13
@@ -177,7 +166,7 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
 **Deployment:**
 - Render (Cloud platform)
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - [ ] Add API key authentication
 - [ ] Implement rate limiting
@@ -186,53 +175,31 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
 - [ ] Add usage analytics dashboard
 - [ ] Implement Redis caching
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👤 Author
+##  Author
 
 **Moses Amwoma**
 
-- 🐙 GitHub: [@mosesamwoma](https://github.com/mosesamwoma)
-- 💼 LinkedIn: [Moses Amwoma](https://linkedin.com/in/moses-amwoma)
-- 📧 Email: [mosesamwoma@gmail.com](mailto:mosesamwoma@gmail.com)
-
-## 📞 Contact & Support
-
-- 📧 **Email**: [mosesamwoma@gmail.com](mailto:mosesamwoma@gmail.com)
-- 💼 **LinkedIn**: [Moses Amwoma](https://linkedin.com/in/moses-amwoma-74735a324)
-- 📚 **API Docs**: [Interactive Documentation](https://spam-email-api-ece2.onrender.com/docs)
-- 🐛 **Report Issues**: [GitHub Issues](https://github.com/mosesamwoma/spam-email-detection-model/issues)
+-  GitHub: [@mosesamwoma](https://github.com/mosesamwoma)
+-  LinkedIn: [Moses Amwoma](https://linkedin.com/in/moses-amwoma)
+-  Email: [mosesamwoma@gmail.com](mailto:mosesamwoma@gmail.com)
 
 ---
 
-## ⭐ Support This Project
-
-If you find this project helpful:
-
-- ⭐ Star the repository
-- 🍴 Fork it for your own projects
-- 🐛 Report bugs
-- 💡 Suggest features
-- 🚀 Use the API in your applications
-
----
-
-## 📥 Quick Links
+##  Quick Links
 
 | Platform | Link | Status |
 |----------|------|--------|
-| 🌐 **API** | [Try Now](https://spam-email-api-ece2.onrender.com/docs) | ✅ Live |
-| 💻 **Windows App** | [Download](https://github.com/mosesamwoma/SpamCheck-app/releases) | ✅ Available |
-| 📖 **Documentation** | [API Docs](https://spam-email-api-ece2.onrender.com/docs) | ✅ Live |
+|  **API** | [Try Now](https://spam-email-api-ece2.onrender.com/docs) | ✅ Live |
+|  **Windows App** | [Download](https://github.com/mosesamwoma/SpamCheck-app/releases) | ✅ Available |
+|  **Documentation** | [API Docs](https://spam-email-api-ece2.onrender.com/docs) | ✅ Live |
 
 ---
 
-**Made with ❤️ by Moses Amwoma**
+**Made with  by Moses Amwoma**
 
 *Building intelligent solutions for a safer digital world*
 
 [![Try the API](https://img.shields.io/badge/Try%20the%20API-Now-brightgreen?style=for-the-badge)](https://spam-email-api-ece2.onrender.com/docs)
 [![Download App](https://img.shields.io/badge/Download%20App-Windows-0078D4?style=for-the-badge)](https://github.com/mosesamwoma/SpamCheck-app/releases)
+
 
