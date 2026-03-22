@@ -3,76 +3,47 @@
 [![Python Version](https://img.shields.io/badge/python-3.13-blue)](https://www.python.org/)
 [![API Status](https://img.shields.io/badge/API-live-brightgreen)](https://spam-email-api-ece2.onrender.com/docs)
 [![Deployed on Render](https://img.shields.io/badge/deployed%20on-Render-46E3B7)](https://render.com)
-[![Status](https://img.shields.io/badge/status-in%20development-orange)](https://github.com/mosesamwoma/spam-email-detection-model)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-A machine learning API for detecting spam emails and messages using TF-IDF vectorization and classification algorithms. Built with FastAPI and deployed on Render.
+A machine learning API for detecting spam emails and messages using TF-IDF vectorization and Logistic Regression. Built with FastAPI and deployed on Render.
 
-> **⚠️ Project Status:** This project is currently under active development.
+##  API in Action
 
-## 🎬 API in Action
-
-See the Spam Detection API in action! The demo below shows real-time email classification through the interactive Swagger UI interface.
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/mosesamwoma/spam-email-detection-model/main/video/main.gif" alt="API Demo" width="800" />
-</div>
+![API Demo](video/main.gif)
 
 **What you're seeing:**
 - Interactive API testing via Swagger UI
-- Real-time spam classification with confidence scores
-- Instant JSON responses with predictions
+- Real-time spam classification
 - Simple integration with any application
 
-## 📊 Project Status
+##  Overview
 
-- ✅ **Trained Model**: Logistic Regression classifier trained and optimized
-- ✅ **TF-IDF Vectorizer**: Feature extraction pipeline deployed
-- ✅ **REST API**: Live and production-ready
-- ✅ **Interactive Docs**: Swagger UI available for testing
-- ✅ **Cloud Deployment**: Hosted on Render with 99.9% uptime
-- 🚧 **Extended Features**: Authentication and batch processing in development
+This project implements a machine learning solution using TF-IDF vectorization and Logistic Regression to automatically identify and filter spam emails with high accuracy. The model is deployed as a FAST API, making it simple to integrate spam detection capabilities into any application or workflow.
 
-## 🎯 Overview
+##  Key Features
 
-Email spam detection is essential for maintaining secure and efficient communication systems. This project implements a machine learning solution using TF-IDF vectorization and Logistic Regression to automatically identify and filter spam emails with high accuracy.
-
-The model is deployed as a REST API, making it simple to integrate spam detection capabilities into any application or workflow.
-
-## ✨ Key Features
-
-- **Advanced Text Processing**: Comprehensive cleaning and normalization pipeline
+- **High-Accuracy Classification**: Trained Logistic Regression model with optimized performance
 - **TF-IDF Vectorization**: Efficient text-to-vector transformation
-- **High-Accuracy Classification**: Trained model with optimized performance metrics
 - **REST API**: Fast, scalable API with JSON responses
 - **Interactive Documentation**: Built-in Swagger UI for easy testing
 - **Real-time Predictions**: Instant spam classification with confidence scores
-- **Health Monitoring**: Built-in health check endpoint
 - **Production Ready**: Deployed on reliable cloud infrastructure
+- **Windows Desktop App**: Native application for easy access
 
-## 🚀 Quick Start - Using the API
+##  Quick Start
 
-### Live API Endpoint
+### Using the Live API
 
-The API is live and ready to use! No installation or setup required.
+The API is live and ready to use! No installation required.
 
 **Base URL**: `https://spam-email-api-ece2.onrender.com`
 
 **Interactive Docs**: [https://spam-email-api-ece2.onrender.com/docs](https://spam-email-api-ece2.onrender.com/docs)
 
-### Example Usage
 
-#### Using cURL
-```bash
-curl -X POST "https://spam-email-api-ece2.onrender.com/api/v1/predict" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "email_text": "Congratulations! You have won $1,000,000! Click here to claim now!",
-    "return_confidence": true
-  }'
-```
 
-#### Using Python
+#### Example with Python
+
 ```python
 import requests
 
@@ -89,11 +60,28 @@ print(f"Prediction: {result['prediction']}")
 print(f"Confidence: {result['confidence']:.2%}")
 ```
 
-## 📡 API Documentation
+##  Windows Desktop Application
+
+Download the SpamCheck desktop application for Windows x64 systems.
+
+**Repository**: [https://github.com/mosesamwoma/SpamCheck-app](https://github.com/mosesamwoma/SpamCheck-app)
+
+**Download**: [Latest Release](https://github.com/mosesamwoma/SpamCheck-app/releases)
+
+**Features:**
+-  Native Windows UI with familiar controls
+-  Easy copy & paste functionality
+-  Fast performance and quick analysis
+-  Secure API communication
+
+**System Requirements:** Windows 10/11 (64-bit), 4GB RAM, Internet connection
+
+##  API Documentation
 
 ### Endpoints
 
 #### POST `/api/v1/predict`
+
 Classify an email or message as spam or ham (legitimate).
 
 **Request Body:**
@@ -107,18 +95,12 @@ Classify an email or message as spam or ham (legitimate).
 **Response:**
 ```json
 {
-  "prediction": "spam",
-  "confidence": 0.97,
-  "timestamp": "2025-12-12T14:30:00Z"
+  "prediction": "spam"
 }
 ```
 
-**Response Fields:**
-- `prediction` (string): Classification result - "spam" or "ham"
-- `confidence` (float): Confidence score between 0 and 1
-- `timestamp` (string): ISO 8601 formatted timestamp
-
 #### GET `/health`
+
 Health check endpoint to verify API availability.
 
 **Response:**
@@ -130,17 +112,17 @@ Health check endpoint to verify API availability.
 ```
 
 ### Try It Out!
-Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.com/docs) to test endpoints directly in your browser with the Swagger UI interface.
 
-## 💻 Local Development
+Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.com/docs) to test endpoints directly in your browser.
+
+##  Local Development
 
 ### Prerequisites
 
 - Python 3.8 or higher
 - pip package manager
-- virtualenv (recommended)
 
-### Installation & Setup
+### Setup
 
 1. **Clone the repository**
    ```bash
@@ -167,106 +149,57 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
 5. **Access the API**
    - API: http://localhost:8000
    - Interactive Docs: http://localhost:8000/docs
-   - Health Check: http://localhost:8000/health
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
-### Core Technologies
-- **Python 3.13**: Primary programming language
-- **FastAPI**: Modern, high-performance web framework
-- **Uvicorn**: Lightning-fast ASGI server
+**Core Technologies:**
+- Python 3.13
+- FastAPI
+- Uvicorn
 
-### Machine Learning
-- **scikit-learn**: ML library and algorithms
-  - Logistic Regression classifier
-  - TF-IDF Vectorizer for feature extraction
-  - Model evaluation and validation tools
-- **pandas**: Data manipulation and analysis
-- **numpy**: Numerical computing operations
+**Machine Learning:**
+- scikit-learn (Logistic Regression, TF-IDF Vectorizer)
+- pandas
+- numpy
 
-### Natural Language Processing
-- **nltk**: Text preprocessing and tokenization
 
-### Testing & Deployment
-- **pytest**: Testing framework
-- **Render**: Cloud deployment platform
+**Deployment:**
+- Render (Cloud platform)
 
-## 🔮 Roadmap & Future Enhancements
+##  Future Improvements
 
-### In Development
-- [ ] **Batch Processing API**: Support for bulk email classification
-- [ ] **API Authentication**: Secure API key-based authentication
-- [ ] **Rate Limiting**: Request throttling for production environments
+- [ ] Add API key authentication
+- [ ] Implement rate limiting
+- [ ] Add batch email processing
+- [ ] Test additional classifiers (Naive Bayes, SVM)
+- [ ] Add usage analytics dashboard
+- [ ] Implement Redis caching
 
-### Planned Features
-- [ ] **Enhanced Models**: Ensemble methods and advanced algorithms
-  - Voting Classifier (Logistic Regression + Naive Bayes + SVM)
-  - Random Forest Classifier
-  - Gradient Boosting (XGBoost/LightGBM)
-  - Neural network approaches
-- [ ] **Model Comparison Dashboard**: Performance metrics across models
-- [ ] **Hyperparameter Optimization**: Automated tuning with GridSearch/RandomSearch
-- [ ] **Multi-language Support**: Spam detection for non-English emails
-- [ ] **Response Caching**: Redis integration for improved performance
-- [ ] **Extended Test Coverage**: Comprehensive unit and integration tests
-- [ ] **Model Monitoring**: Performance tracking and drift detection
-- [ ] **Email Parser Integration**: Automatic header and content extraction
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for full details.
-
-## 👤 Author
+##  Author
 
 **Moses Amwoma**
 
-- 🐙 GitHub: [@mosesamwoma](https://github.com/mosesamwoma)
-- 💼 LinkedIn: [Moses Amwoma](https://linkedin.com/in/moses-amwoma-74735a324)
-- 📧 Email: [mosesamwoma@gmail.com](mailto:mosesamwoma@gmail.com)
-- 🔗 Project: [Spam Email Detection Model](https://github.com/mosesamwoma/spam-email-detection-model)
-
-## 🙏 Acknowledgments
-
-- Dataset source: [Kaggle Spam Email Dataset](https://www.kaggle.com/)
-- Inspired by email security research and industry best practices
-- Built with amazing open-source tools and libraries
-- Deployed on [Render](https://render.com) for reliable cloud hosting
-- Thanks to the ML and NLP communities for continuous innovation
-
-## 📞 Contact & Support
-
-Questions, suggestions, or collaboration opportunities? Let's connect!
-
-- 📧 **Email**: [mosesamwoma@gmail.com](mailto:mosesamwoma@gmail.com)
-- 💼 **LinkedIn**: [Moses Amwoma](https://linkedin.com/in/moses-amwoma-74735a324)
-- 🐙 **GitHub**: [@mosesamwoma](https://github.com/mosesamwoma)
-- 📚 **API Docs**: [Interactive Documentation](https://spam-email-api-ece2.onrender.com/docs)
-- 🐛 **Report Issues**: [GitHub Issues](https://github.com/mosesamwoma/spam-email-detection-model/issues)
+-  GitHub: [@mosesamwoma](https://github.com/mosesamwoma)
+-  LinkedIn: [Moses Amwoma](https://linkedin.com/in/moses-amwoma)
+-  Email: [mosesamwoma@gmail.com](mailto:mosesamwoma@gmail.com)
 
 ---
 
-## ⭐ Support This Project
+##  Quick Links
 
-If you find this project helpful, please consider:
-
-- ⭐ **Star** the repository to show your appreciation
-- 🍴 **Fork** it to build upon for your own projects
-- 📢 **Share** it with colleagues and friends
-- 🐛 **Report bugs** to help improve quality
-- 💡 **Suggest features** for future development
-- 🤝 **Contribute** by submitting pull requests
-- 🚀 **Use the API** in your applications and projects
-
-Your support helps make this project better for everyone!
+| Platform | Link | Status |
+|----------|------|--------|
+|  **API** | [Try Now](https://spam-email-api-ece2.onrender.com/docs) | ✅ Live |
+|  **Windows App** | [Download](https://github.com/mosesamwoma/SpamCheck-app/releases) | ✅ Available |
+|  **Documentation** | [API Docs](https://spam-email-api-ece2.onrender.com/docs) | ✅ Live |
 
 ---
 
-<div align="center">
-
-**Made with ❤️ by Moses Amwoma**
+**Made with  by Moses Amwoma**
 
 *Building intelligent solutions for a safer digital world*
 
 [![Try the API](https://img.shields.io/badge/Try%20the%20API-Now-brightgreen?style=for-the-badge)](https://spam-email-api-ece2.onrender.com/docs)
+[![Download App](https://img.shields.io/badge/Download%20App-Windows-0078D4?style=for-the-badge)](https://github.com/mosesamwoma/SpamCheck-app/releases)
 
-</div>
+
