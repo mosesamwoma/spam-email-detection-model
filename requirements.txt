@@ -6,5 +6,4 @@ pandas
 numpy
 seaborn
 matplotlib
-pytest
 

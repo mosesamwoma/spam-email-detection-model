@@ -175,31 +175,6 @@ Visit the [interactive API documentation](https://spam-email-api-ece2.onrender.c
 - [ ] Add usage analytics dashboard
 - [ ] Implement Redis caching
 
-##  Author
-
-**Moses Amwoma**
-
--  GitHub: [@mosesamwoma](https://github.com/mosesamwoma)
--  LinkedIn: [Moses Amwoma](https://linkedin.com/in/moses-amwoma)
--  Email: [mosesamwoma@gmail.com](mailto:mosesamwoma@gmail.com)
-
 ---
-
-##  Quick Links
-
-| Platform | Link | Status |
-|----------|------|--------|
-|  **API** | [Try Now](https://spam-email-api-ece2.onrender.com/docs) | ✅ Live |
-|  **Windows App** | [Download](https://github.com/mosesamwoma/SpamCheck-app/releases) | ✅ Available |
-|  **Documentation** | [API Docs](https://spam-email-api-ece2.onrender.com/docs) | ✅ Live |
-
----
-
-**Made with  by Moses Amwoma**
-
-*Building intelligent solutions for a safer digital world*
-
-[![Try the API](https://img.shields.io/badge/Try%20the%20API-Now-brightgreen?style=for-the-badge)](https://spam-email-api-ece2.onrender.com/docs)
-[![Download App](https://img.shields.io/badge/Download%20App-Windows-0078D4?style=for-the-badge)](https://github.com/mosesamwoma/SpamCheck-app/releases)
 
 
