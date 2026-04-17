@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="Spam Email Detection API",
-    description="API to classify email text as spam or not spam(ham)",
+    description="API to classify email text as spam or ham",
     version="1.0"
 )
 
@@ -24,20 +24,29 @@ VECTORIZER_PATH = os.path.join(BASE_DIR, "models", "tfidf_vectorizer.pkl")
 model = joblib.load(MODEL_PATH)
 vectorizer = joblib.load(VECTORIZER_PATH)
 
+class EmailText(BaseModel):
+    email_text: str = Field(..., example="You've won a free iPhone! Click to claim.")
+    return_confidence: bool = False
+
 @app.get("/")
 def home():
     return {
-        "message": "Welcome to the Spam Email Detection API 🚀",
+        "message": "Welcome to the Spam Email Detection API",
         "docs": "/docs",
-        "predict": "/predict"
+        "predict": "/api/v1/predict"
     }
 
-class EmailText(BaseModel):
-    text: str = Field(..., example="You've won a free iPhone! Click to claim.")
+@app.get("/health")
+def health():
+    return {"status": "healthy"}
 
-@app.post("/predict")
+@app.post("/api/v1/predict")
 def predict(email: EmailText):
-    X = vectorizer.transform([email.text])
+    X = vectorizer.transform([email.email_text])
     pred = model.predict(X)[0]
-    result = "spam" if pred == 1 else "not spam"
+    result = "spam" if str(pred) in ["1", "spam"] else "ham"
+    if email.return_confidence:
+        proba = model.predict_proba(X)[0]
+        confidence = float(max(proba))
+        return {"prediction": result, "confidence": confidence}
     return {"prediction": result}
