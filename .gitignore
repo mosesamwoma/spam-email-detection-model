@@ -1,21 +1,4 @@
-# Python
 __pycache__/
 *.pyc
-
-# Virtual environment
 venv/
 .venv/
-
-# Logs only
-logs/
-*.log
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Secrets
-.env
-
-.vscode
-.vscode/settings.json
