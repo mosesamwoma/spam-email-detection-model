@@ -86,4 +86,8 @@ Download the SpamCheck desktop application for Windows x64 systems.
 - [ ] Add usage analytics dashboard
 - [ ] Implement Redis caching
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> af1bdbc6f88ea9c6d5b73c11fe4aec45690b6abd
