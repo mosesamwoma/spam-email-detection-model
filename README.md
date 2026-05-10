@@ -2,7 +2,7 @@
 
 A machine learning API for detecting spam emails and messages using TF-IDF vectorization and Logistic Regression. Built with FastAPI and deployed on Render.
 
-![API Demo](video/main.gif)
+![API Demo](gif/main.gif)
 
 ## Overview
 
